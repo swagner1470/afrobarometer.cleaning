@@ -1,0 +1,22 @@
+Package: afrobarometer.cleaning
+Title: Clean and Harmonize Afrobarometer Survey Data
+Version: 0.1.0
+Authors@R: person("Your", "Name", email = "you@email.com", role = c("aut", "cre"))
+Description: Provides functions to load, clean, and harmonize Afrobarometer
+    survey data across rounds 5 to 9. Handles round-specific variable name
+    differences, recodes negative/sentinel values from the Afrobarometer
+    codebook to NA, binarizes selected variables, and computes composite
+    indices (civic participation, bribes, services, etc.).
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.1
+Imports:
+    dplyr,
+    haven,
+    tidyr,
+    rlang,
+    stats
+Suggests:
+    ggplot2,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
